@@ -1,3 +1,44 @@
-<h2 id="title">Welcome to Ember</h2>
+<style>
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  header {
+    background: gray;
+    text-align: center;
+  }
+  footer {
+    background: pink;
+  }
+  .navbar-header a {
+    padding: 0 5px 0 5px;
+  }
 
-{{outlet}}
+
+</style>
+
+
+<header>
+  <h1>BUSTLE</h1>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">About</a>
+      <a class="navbar-brand" href="/">Contact</a>
+      <a class="navbar-brand" href="/">News</a>
+      <a class="navbar-brand" href="/">The Future</a>
+      <a class="navbar-brand" href="/">The More Future</a>
+
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="body">
+  {{outlet}}
+</div>
+
+<footer>
+  THIS ISNT A BOX. Or is it?
+</footer>
